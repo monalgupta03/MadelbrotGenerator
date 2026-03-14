@@ -61,7 +61,7 @@ python -m snakeviz v1.prof
 
 ### Version 1 - Baseline (225s)
 
-Pure Python. Two nested loops to build the grid, another two nested loops to check convergence on every point. With a step size of 0.001, that's ~16 million points - each iterated up to 100 times in pure Python.
+Pure Python. Two nested loops to build the grid, another two nested loops in main to check convergence on every point. With a step size of 0.001, that's ~16 million points - each iterated up to 100 times in pure Python.
 ```python
 def checkConvergence(number, z=0):
     iterNo = 0
